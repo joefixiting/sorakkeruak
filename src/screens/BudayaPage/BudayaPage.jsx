@@ -4,13 +4,13 @@ import { ImageCarousel } from "../../components/ImageCarousel";
 
 // Impor-impor lainnya
 import BackgroundImage from '../../assets/images/BudayaBackground.png';
-import SorakGallery1 from '../../assets/images/Tentang1.JPG';
+import SorakGallery1 from '../../assets/images/Budaya1.png';
 import SorakGallery2 from '../../assets/images/Tentang2.JPG';
 import SorakGallery3 from '../../assets/images/Tentang3.JPG';
-import SorakGallery4 from '../../assets/images/Tentang4.JPG';
-import SorakGallery5 from '../../assets/images/Tentang5.JPG';
-import SorakGallery6 from '../../assets/images/Tentang6.JPG';
-import SorakGallery7 from '../../assets/images/Tentang7.JPG';
+import SorakGallery4 from '../../assets/images/Budaya4.png';
+import SorakGallery5 from '../../assets/images/Budaya5.png';
+import SorakGallery6 from '../../assets/images/Budaya6.png';
+import SorakGallery7 from '../../assets/images/Budaya7.png';
 import SorakGallery8 from '../../assets/images/Tentang8.JPG';
 import SorakGallery9 from '../../assets/images/Tentang9.JPG';
 import SorakGallery10 from '../../assets/images/Tentang10.JPG';

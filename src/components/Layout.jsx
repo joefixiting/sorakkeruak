@@ -16,7 +16,7 @@ const Layout = ({ children, navigate }) => {
     { name: 'Budaya', href: '/budaya' },
     { name: 'Lingkungan', href: '/lingkungan' },
     { name: 'Pangan', href: '/pangan' },
-    { name: 'Berita Acara', href: '#' },
+    { name: 'Berita Acara', href: '/beritaacara' },
     { name: 'Tentang', href: '/tentang' } // Updated href
   ];
 
