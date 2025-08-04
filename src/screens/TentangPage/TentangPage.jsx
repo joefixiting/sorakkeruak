@@ -65,7 +65,7 @@ export const TentangPage = () => {
       <section className="relative pb-24 -mt-16">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-3xl sm:text-4xl text-center mb-12 font-display text-white">
-            Galeri Tim KKN
+            Galeri Sorak Keruak
           </h2>
           <ImageCarousel images={sorakKeruakGallery} />
         </div>
