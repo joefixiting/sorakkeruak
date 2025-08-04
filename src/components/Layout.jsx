@@ -13,7 +13,7 @@ const Layout = ({ children, navigate }) => {
   const navLinks = [
     { name: 'Beranda', href: '/' },
     { name: 'Pariwisata', href: '/pariwisata' },
-    { name: 'Budaya', href: '#' },
+    { name: 'Budaya', href: '/budaya' },
     { name: 'Lingkungan', href: '/lingkungan' },
     { name: 'Pangan', href: '/pangan' },
     { name: 'Berita Acara', href: '#' },

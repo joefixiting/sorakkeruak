@@ -6,6 +6,7 @@ import { PanganPage } from "./screens/PanganPage";
 import { TentangPage } from "./screens/TentangPage";
 import { PariwisataPage } from "./screens/PariwisataPage";
 import { LingkunganPage } from "./screens/LingkunganPage";
+import { BudayaPage } from "./screens/BudayaPage";
 import Layout from "./components/Layout";
 
 const App = () => {
@@ -41,6 +42,9 @@ const App = () => {
       break;
     case '/lingkungan': 
       PageComponent = <LingkunganPage />;
+      break;
+    case '/budaya':
+      PageComponent = <BudayaPage />; 
       break;
     default:
       PageComponent = <LandingPage />;
