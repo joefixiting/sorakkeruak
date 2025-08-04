@@ -57,17 +57,15 @@ export const PariwisataPage = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // === FOKUS PERUBAHAN DI SINI ===
   const goToPrevious = () => {
     setCurrentIndex(prev => (prev > 0 ? prev - 1 : prev));
-    window.scrollTo(0, 0); // Tambahkan ini
+    window.scrollTo(0, 0);
   };
   
   const goToNext = () => {
     setCurrentIndex(prev => (prev < pageData.length - 1 ? prev + 1 : prev));
-    window.scrollTo(0, 0); // Tambahkan ini
+    window.scrollTo(0, 0);
   };
-  // === AKHIR DARI FOKUS PERUBAHAN ===
   
   const currentView = pageData[currentIndex];
 
@@ -77,10 +75,17 @@ export const PariwisataPage = () => {
 
   return (
     <>
-      {/* Bagian Hero Section (tidak ada perubahan) */}
+      {/* Bagian Hero Section */}
       <div className="relative isolate overflow-hidden">
         <img className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ease-in-out" alt="Background" src={currentView.background} key={currentView.background}/>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent from-30% to-[#0b3848]"></div>
+        
+        {/* === FOKUS PERUBAHAN DI SINI === */}
+        {/* Overlay 1: Lapisan warna biru dengan opasitas 70% */}
+        <div className="absolute inset-0 bg-[#0b3848]/0"></div>
+        {/* Overlay 2: Lapisan gradien dari atas dan bawah */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0b3848] via-transparent to-[#0b3848]"></div>
+        {/* === AKHIR DARI FOKUS PERUBAHAN === */}
+
         <Header />
         <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           {currentIndex > 0 && (
@@ -117,7 +122,7 @@ export const PariwisataPage = () => {
         </div>
       </div>
 
-      {/* Bagian Galeri Desa (tidak ada perubahan) */}
+      {/* Bagian Galeri Desa */}
       <section className="py-16 sm:py-24">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-3xl sm:text-4xl text-center mb-12 font-display">
@@ -128,4 +133,4 @@ export const PariwisataPage = () => {
       </section>
     </>
   );
-};
+};  

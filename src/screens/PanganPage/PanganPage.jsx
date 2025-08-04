@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react"; 
+import React, { useState, useEffect } from "react";
 import Header from '../../components/Header';
 import Carousel from '../../components/Carousel';
 import Modal from '../../components/Modal';
-import BackgroundImage from '../../assets/images/IkanBackground.webp'; 
+import BackgroundImage from '../../assets/images/IkanBackground.webp';
 
 const PanganBackgroundImage = BackgroundImage;
 
@@ -58,15 +58,20 @@ export const PanganPage = () => {
     <>
       <div className="relative isolate overflow-hidden">
         <img className="absolute inset-0 w-full h-full object-cover" alt="Pangan background" src={PanganBackgroundImage} />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0b3848]/50 to-[#0b3848]"></div>
+        
+        {/* === FOKUS PERUBAHAN DI SINI === */}
+        {/* Overlay 1: Lapisan warna biru dengan opasitas 70% */}
+        <div className="absolute inset-0 bg-[#0b3848]/50  "></div>
+        {/* Overlay 2: Lapisan gradien dari atas dan bawah */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0b3848] via-transparent to-[#0b3848]"></div>
+        {/* === AKHIR DARI FOKUS PERUBAHAN === */}
+
         <Header />
         <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <section className="py-20 sm:py-28 text-center flex flex-col items-center">
-                {/* Menggunakan font-display dan menghapus style inline */}
                 <h1 className="text-5xl sm:text-7xl font-display text-[#ffffff]">
                     Panganan Warisan Bahari.
                 </h1>
-                {/* Menggunakan font-sans untuk deskripsi */}
                 <p className="mt-8 text-lg text-white/90 max-w-2xl mx-auto text-justify font-sans">
                     Temukan kekayaan pangan khas Desa Ketapang Raya dan Tanjung Luar. Sajian pangan yang lahir dari laut, potensi lokal, dan keberagaman budaya yang menjadi cerminan khas di Keruak, Lombok Timur.
                 </p>
@@ -76,7 +81,6 @@ export const PanganPage = () => {
 
       <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          {/* Menggunakan font-sf-bold untuk sub-judul */}
           <h2 className="text-3xl sm:text-4xl font-display text-center mb-12">
             Jejak Rasa dari Pesisir
           </h2>

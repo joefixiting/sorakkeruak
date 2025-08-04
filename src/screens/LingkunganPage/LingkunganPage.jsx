@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../../components/Header';
 import Carousel from '../../components/Carousel';
 import Modal from '../../components/Modal';
-import BackgroundImage from '../../assets/images/tl.svg'; // Reusing the background image, or you can change it
+import BackgroundImage from '../../assets/images/tl.svg';
 
-const LingkunganBackgroundImage = BackgroundImage; // Renamed for clarity
+const LingkunganBackgroundImage = BackgroundImage;
 
 const lingkunganData = [
   {
@@ -42,6 +42,10 @@ const lingkunganData = [
 export const LingkunganPage = () => {
   const [selectedCard, setSelectedCard] = useState(null);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const handleCardClick = (cardData) => {
     setSelectedCard(cardData);
   };
@@ -54,11 +58,18 @@ export const LingkunganPage = () => {
     <>
       <div className="relative isolate overflow-hidden">
         <img className="absolute inset-0 w-full h-full object-cover" alt="Lingkungan background" src={LingkunganBackgroundImage} />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1a5266]/50 to-[#1a5266]"></div> {/* Adjusted gradient colors for a more 'green' feel */}
+        
+        {/* === FOKUS PERUBAHAN DI SINI === */}
+        {/* Overlay 1: Lapisan warna biru dengan opasitas 70% */}
+        <div className="absolute inset-0 bg-[#0b3848]/0"></div>
+        {/* Overlay 2: Lapisan gradien dari atas dan bawah */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0b3848] via-transparent to-[#0b3848]"></div>
+        {/* === AKHIR DARI FOKUS PERUBAHAN === */}
+
         <Header />
         <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <section className="py-20 sm:py-28 text-center flex flex-col items-center">
-            <h1 className="text-5xl sm:text-7xl font-display text-[#ffffff]">
+            <h1 className="text-5xl sm:text-7xl font-display text-white">
               Lingkungan Lestari, Masa Depan Cerah
             </h1>
             <p className="mt-8 text-lg text-white/90 max-w-2xl mx-auto text-justify font-sans">
