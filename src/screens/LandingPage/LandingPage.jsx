@@ -3,8 +3,8 @@ import Card from "../../components/Card";
 import CardContent from "../../components/CardContent";
 import Header from "../../components/Header";
 import BackgroundImage from '../../assets/images/LandingPageBackground.png';
-import TanjungLuarImage from '../../assets/images/tl.svg';
-import KetapangRayaImage from '../../assets/images/ktpr.svg';
+import TanjungLuarImage from '../../assets/images/TL.png';
+import KetapangRayaImage from '../../assets/images/KTPR.png';
 
 export const LandingPage = () => {
   const villageData = [
