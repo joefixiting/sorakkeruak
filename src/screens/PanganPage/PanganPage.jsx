@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react"; // <-- 1. Impor useEffect
+import React, { useState, useEffect } from "react"; 
 import Header from '../../components/Header';
 import Carousel from '../../components/Carousel';
 import Modal from '../../components/Modal';
-import BackgroundImage from '../../assets/images/tl.svg';
+import BackgroundImage from '../../assets/images/IkanBackground.webp'; 
 
 const PanganBackgroundImage = BackgroundImage;
 
