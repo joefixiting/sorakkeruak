@@ -60,7 +60,7 @@ export const LingkunganPage = () => {
             <section className="py-20 sm:py-28 text-center flex flex-col items-center">
                 {/* Menggunakan font-display dan menghapus style inline */}
                 <h1 className="text-5xl sm:text-7xl font-display text-[#ffffff]">
-                    Panganan Warisan Bahari
+                    Panganan Warisan Bahari.
                 </h1>
                 {/* Menggunakan font-sans untuk deskripsi */}
                 <p className="mt-8 text-lg text-white/90 max-w-2xl mx-auto text-justify font-sans">
