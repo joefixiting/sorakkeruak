@@ -2,14 +2,15 @@ import React, { useState, useEffect } from 'react';
 import Header from '../../components/Header';
 import Carousel from '../../components/Carousel';
 import Modal from '../../components/Modal';
-import BackgroundImage from '../../assets/images/tl.svg';
+import BackgroundImage from '../../assets/images/LingkunganBackground.png';
+import LK1 from '../../assets/images/LK1.png';
 
 const LingkunganBackgroundImage = BackgroundImage;
 
 const lingkunganData = [
   {
     id: 1,
-    image: 'https://placehold.co/600x400/28a745/ffffff?text=Penanaman+Mangrove',
+    image: LK1 ,
     title: 'Penanaman Mangrove di Pesisir Ketapang Raya',
     description: 'Kegiatan penanaman ribuan bibit mangrove berhasil dilaksanakan di Desa Ketapang Raya, melibatkan masyarakat lokal, pelajar, dan komunitas peduli lingkungan. Inisiatif ini bertujuan untuk melindungi garis pantai dari abrasi, menciptakan habitat alami bagi biota laut, dan berkontribusi pada mitigasi perubahan iklim.',
   },
@@ -55,34 +56,45 @@ export const LingkunganPage = () => {
   };
 
   return (
-    <>
+    // Tambahkan div pembungkus dengan warna latar belakang dasar
+    <div className="bg-[#0b3848]">
+      {/* Bagian Hero Section */}
       <div className="relative isolate overflow-hidden">
         <img className="absolute inset-0 w-full h-full object-cover" alt="Lingkungan background" src={LingkunganBackgroundImage} />
         
-        {/* === FOKUS PERUBAHAN DI SINI === */}
-        {/* Overlay 1: Lapisan warna biru dengan opasitas 70% */}
         <div className="absolute inset-0 bg-[#0b3848]/0"></div>
-        {/* Overlay 2: Lapisan gradien dari atas dan bawah */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#0b3848] via-transparent to-[#0b3848]"></div>
-        {/* === AKHIR DARI FOKUS PERUBAHAN === */}
 
         <Header />
         <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <section className="py-20 sm:py-28 text-center flex flex-col items-center">
-            <h1 className="text-5xl sm:text-7xl font-display text-white">
-              Lingkungan Lestari, Masa Depan Cerah
-            </h1>
-            <p className="mt-8 text-lg text-white/90 max-w-2xl mx-auto text-justify font-sans">
-              Menjelajahi upaya-upaya konservasi dan inisiatif ramah lingkungan di Desa Ketapang Raya dan Tanjung Luar,
-              yang berfokus pada menjaga kelestarian alam demi keberlanjutan hidup dan generasi mendatang di Keruak, Lombok Timur.
-            </p>
+            
+            {/* Pembungkus untuk judul dan overlay-nya */}
+            <div className="relative mb-6">
+              <div className="absolute inset-x-0 -top-4 -bottom-4 bg-[#0b3848] opacity-40 rounded-lg blur-xl"></div>
+              <h1 className="relative text-5xl sm:text-7xl font-display text-white">
+                Lingkungan Lestari, Masa Depan Cerah.
+              </h1>
+            </div>
+            
+            {/* Pembungkus untuk deskripsi dan overlay-nya */}
+            <div className="relative mt-6 max-w-2xl">
+              <div className="absolute inset-0 bg-[#0b3848] opacity-50 rounded-full blur-2xl"></div>
+              <div className="relative flex flex-col gap-4 mx-auto text-sm sm:text-base text-white/90 text-justify p-4 font-sans">
+                <p>
+                  Menjelajahi upaya-upaya konservasi dan inisiatif ramah lingkungan di Desa Ketapang Raya dan Tanjung Luar,
+                  yang berfokus pada menjaga kelestarian alam demi keberlanjutan hidup dan generasi mendatang di Keruak, Lombok Timur.
+                </p>
+              </div>
+            </div>
           </section>
         </div>
       </div>
 
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
+      {/* Bagian Carousel dengan Style 1 */}
+      <section className="relative pb-16 sm:pb-24 -mt-0 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-3xl sm:text-4xl font-display text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-display text-center mb-12 text-white">
             Inisiatif Lingkungan Kami
           </h2>
           <Carousel data={lingkunganData} onCardClick={handleCardClick} />
@@ -90,6 +102,6 @@ export const LingkunganPage = () => {
       </section>
 
       {selectedCard && <Modal data={selectedCard} onClose={handleCloseModal} />}
-    </>
+    </div>
   );
 };

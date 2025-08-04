@@ -123,7 +123,7 @@ export const PariwisataPage = () => {
       </div>
 
       {/* Bagian Galeri Desa */}
-      <section className="py-16 sm:py-24">
+      <section className="relative pb-24 -mt-0">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-3xl sm:text-4xl text-center mb-12 font-display">
             {currentView.galleryTitle}

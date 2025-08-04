@@ -37,7 +37,6 @@ export const TentangPage = () => {
   }, []);
 
   return (
-    // Kita tambahkan bg-[#0b3848] di sini agar ada warna dasar jika gambar utama belum termuat
     <div className="bg-[#0b3848]">
       {/* Bagian Hero Section */}
       <div className="relative isolate overflow-hidden min-h-screen flex flex-col justify-center items-center pt-24 pb-0">
@@ -50,18 +49,31 @@ export const TentangPage = () => {
             <Header />
         </div>
 
+        {/* === KONTEN HERO DENGAN STYLE 3 === */}
         <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
-            <h1 className="text-5xl sm:text-7xl font-display text-[#f0843b]">
-                Tentang Sorak Keruak.
-            </h1>
-            <p className="mt-8 text-lg text-white/90 max-w-3xl mx-auto text-justify font-sans">
-                Selamat datang di situs resmi Tim KKN-PPM UGM Unit Sorak Keruak. Website ini didedikasikan untuk mendokumentasikan dan mempromosikan potensi bahari, budaya, dan pariwisata di Kecamatan Keruak, Lombok Timur, sebagai bagian dari program pengabdian kepada masyarakat.
-            </p>
+            
+            {/* Pembungkus untuk judul dan overlay-nya */}
+            <div className="relative mb-6">
+              <div className="absolute inset-x-0 -top-4 -bottom-4 bg-[#0b3848] opacity-0 rounded-lg blur-xl"></div>
+              <h1 className="relative text-5xl sm:text-7xl font-display text-[#f0843b]">
+                  Tentang Sorak Keruak.
+              </h1>
+            </div>
+
+            {/* Pembungkus untuk deskripsi dan overlay-nya */}
+            <div className="relative mt-6 max-w-2xl">
+              <div className="absolute inset-0 bg-[#0b3848] opacity-0 rounded-full blur-2xl"></div>
+              <div className="relative flex flex-col gap-4 mx-auto text-sm sm:text-base text-white/90 text-justify p-4 font-sans">
+                <p>
+                  Selamat datang di situs resmi Tim KKN-PPM UGM Unit Sorak Keruak. Website ini didedikasikan untuk mendokumentasikan dan mempromosikan potensi bahari, budaya, dan pariwisata di Kecamatan Keruak, Lombok Timur, sebagai bagian dari program pengabdian kepada masyarakat.
+                </p>
+              </div>
+            </div>
+
         </div>
       </div>
 
       {/* Bagian Galeri */}
-      {/* --- LATAR BELAKANG BIRU DIHAPUS DARI SINI --- */}
       <section className="relative pb-24 -mt-16">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-3xl sm:text-4xl text-center mb-12 font-display text-white">

@@ -68,18 +68,31 @@ export const PanganPage = () => {
 
         <Header />
         <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <section className="py-20 sm:py-28 text-center flex flex-col items-center">
-                <h1 className="text-5xl sm:text-7xl font-display text-[#ffffff]">
-                    Panganan Warisan Bahari.
-                </h1>
-                <p className="mt-8 text-lg text-white/90 max-w-2xl mx-auto text-justify font-sans">
-                    Temukan kekayaan pangan khas Desa Ketapang Raya dan Tanjung Luar. Sajian pangan yang lahir dari laut, potensi lokal, dan keberagaman budaya yang menjadi cerminan khas di Keruak, Lombok Timur.
+          <section className="py-20 sm:py-28 text-center flex flex-col items-center">
+            
+            {/* Pembungkus untuk judul dan overlay-nya */}
+            <div className="relative mb-6">
+              <div className="absolute inset-x-0 -top-4 -bottom-4 bg-[#0b3848] opacity-40 rounded-lg blur-xl"></div>
+              <h1 className="relative text-5xl sm:text-7xl font-display text-white">
+                Panganan Warisan Bahari.
+              </h1>
+            </div>
+            
+            {/* Pembungkus untuk deskripsi dan overlay-nya */}
+            <div className="relative mt-6 max-w-2xl">
+              <div className="absolute inset-0 bg-[#0b3848] opacity-50 rounded-full blur-2xl"></div>
+              <div className="relative flex flex-col gap-4 mx-auto text-sm sm:text-base text-white/90 text-justify p-4 font-sans">
+                <p>
+                  Temukan kekayaan pangan khas Desa Ketapang Raya dan Tanjung Luar. Sajian pangan yang lahir dari laut, potensi lokal, dan keberagaman budaya yang menjadi cerminan khas di Keruak, Lombok Timur.
                 </p>
-            </section>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
 
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
+
+      <section className="relative pb-16 sm:pb-24 -mt--4 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-3xl sm:text-4xl font-display text-center mb-12">
             Jejak Rasa dari Pesisir

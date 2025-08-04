@@ -17,16 +17,14 @@ export const LandingPage = () => {
   }, []);
 
   return (
-    <>
+    // Tambahkan div pembungkus dengan warna latar belakang dasar
+    <div className="bg-[#0b3848]">
+      {/* Bagian Hero Section */}
       <div className="relative isolate overflow-hidden">
         <img className="absolute inset-0 w-full h-full object-cover" alt="Keruak landscape view" src={BackgroundImage} />
         
-        {/* === FOKUS PERUBAHAN DI SINI === */}
-        {/* Overlay 1: Lapisan warna biru dengan opasitas 70% */}
         <div className="absolute inset-0 bg-[#0b3848]/0"></div>
-        {/* Overlay 2: Lapisan gradien dari atas dan bawah */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#0b3848] via-transparent to-[#0b3848]"></div>
-        {/* === AKHIR DARI FOKUS PERUBAHAN === */}
 
         <Header />
         <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -51,9 +49,12 @@ export const LandingPage = () => {
 
         </div>
       </div>
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
+      
+      {/* Bagian Jelajahi Desa */}
+      {/* --- STYLE 1 DITERAPKAN DI SINI --- */}
+      <section className="relative pb-16 sm:pb-24 -mt--4 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
-          <h2 className="text-3xl sm:text-4xl font-display text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-display text-center mb-12 text-white">
             Jelajahi Desa Kami
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -69,6 +70,6 @@ export const LandingPage = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
