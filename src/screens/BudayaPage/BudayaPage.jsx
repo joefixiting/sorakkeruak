@@ -3,7 +3,7 @@ import Header from '../../components/Header';
 import { ImageCarousel } from "../../components/ImageCarousel";
 
 // Impor-impor lainnya
-import BackgroundImage from '../../assets/images/TentangBackground.png';
+import BackgroundImage from '../../assets/images/BudayaBackground.png';
 import SorakGallery1 from '../../assets/images/Tentang1.JPG';
 import SorakGallery2 from '../../assets/images/Tentang2.JPG';
 import SorakGallery3 from '../../assets/images/Tentang3.JPG';
@@ -43,7 +43,7 @@ export const BudayaPage = () => {
       <div className="relative isolate overflow-hidden min-h-screen flex flex-col justify-center items-center pt-24 pb-0">
         <img className="absolute inset-0 w-full h-full object-cover" alt="Tentang background" src={BackgroundImage} />
 
-        <div className="absolute inset-0 bg-[#0b3848]/70"></div>
+        <div className="absolute inset-0 bg-[#0b3848]/0"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-[#0b3848] via-transparent to-[#0b3848]"></div>
 
         <div className="absolute top-0 left-0 right-0">
@@ -55,7 +55,7 @@ export const BudayaPage = () => {
             
             {/* Pembungkus untuk judul dan overlay-nya */}
             <div className="relative mb-6">
-              <div className="absolute inset-x-0 -top-4 -bottom-4 bg-[#0b3848] opacity-0 rounded-lg blur-xl"></div>
+              <div className="absolute inset-x-0 -top-4 -bottom-4 bg-[#0b3848] opacity-50 rounded-lg blur-xl"></div>
               <h1 className="relative text-5xl sm:text-7xl font-display">
                   Nyalamak Dilauq.
               </h1>
@@ -63,7 +63,7 @@ export const BudayaPage = () => {
 
             {/* Pembungkus untuk deskripsi dan overlay-nya */}
             <div className="relative mt-6 max-w-2xl">
-              <div className="absolute inset-0 bg-[#0b3848] opacity-0 rounded-full blur-2xl"></div>
+              <div className="absolute inset-0 bg-[#0b3848] opacity-40 rounded-full blur-2xl"></div>
               <div className="relative flex flex-col gap-4 mx-auto text-sm sm:text-base text-white/90 text-justify p-4 font-sans">
                 <p>
                   Selamat datang di situs resmi Tim KKN-PPM UGM Unit Sorak Keruak. Website ini didedikasikan untuk mendokumentasikan dan mempromosikan potensi bahari, budaya, dan pariwisata di Kecamatan Keruak, Lombok Timur, sebagai bagian dari program pengabdian kepada masyarakat.

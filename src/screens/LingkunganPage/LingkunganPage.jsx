@@ -92,7 +92,7 @@ export const LingkunganPage = () => {
       </div>
 
       {/* Bagian Carousel dengan Style 1 */}
-      <section className="relative pb-16 sm:pb-24 -mt-0 px-4 sm:px-6 lg:px-8">
+      <section className="relative pb-16 sm:pb-24 -mt--10 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-3xl sm:text-4xl font-display text-center mb-12 text-white">
             Inisiatif Lingkungan Kami
