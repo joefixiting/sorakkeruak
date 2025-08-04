@@ -54,7 +54,7 @@ export const TentangPage = () => {
             <h1 className="text-5xl sm:text-7xl font-display text-[#f0843b]">
                 Tentang Sorak Keruak.
             </h1>
-            <p className="mt-8 text-lg text-white/90 max-w-3xl mx-auto text-center font-sans">
+            <p className="mt-8 text-lg text-white/90 max-w-3xl mx-auto text-justify font-sans">
                 Selamat datang di situs resmi Tim KKN-PPM UGM Unit Sorak Keruak. Website ini didedikasikan untuk mendokumentasikan dan mempromosikan potensi bahari, budaya, dan pariwisata di Kecamatan Keruak, Lombok Timur, sebagai bagian dari program pengabdian kepada masyarakat.
             </p>
         </div>
