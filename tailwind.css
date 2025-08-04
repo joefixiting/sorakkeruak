@@ -1,0 +1,39 @@
+/* 1. Deklarasi Tailwind cukup sekali di paling atas */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2. Custom layer Anda bisa diletakkan di sini */
+@layer base {
+  button,
+  input,
+  select,
+  textarea {
+    @apply appearance-none bg-transparent border-0 outline-none;
+  }
+}
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+/* 3. Deklarasi @font-face dengan path yang benar dari root */
+@font-face {
+  font-family: "SF Pro Display-Bold";
+  /* Path dari root ke folder src */
+  src: url("src/assets/fonts/SFPRODISPLAYBOLD.OTF") format("opentype");
+}
+
+@font-face {
+  font-family: "Beautique Display-Bold";
+  /* Path dari root ke folder src */
+  src: url("src/assets/fonts/BeautiqueDisplay-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SF Pro Display-Regular";
+  /* Path dari root ke folder src */
+  src: url("src/assets/fonts/SFPRODISPLAYREGULAR.OTF") format("opentype");
+}

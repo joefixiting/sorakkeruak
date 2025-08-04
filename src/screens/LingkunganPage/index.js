@@ -1,0 +1,1 @@
+export { LingkunganPage } from "./LingkunganPage";

@@ -1,0 +1,1 @@
+export { PariwisataPage } from "./PariwisataPage";

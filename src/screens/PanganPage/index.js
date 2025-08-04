@@ -1,0 +1,1 @@
+export { PanganPage } from "./PanganPage";
