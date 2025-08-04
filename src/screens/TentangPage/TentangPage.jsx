@@ -55,7 +55,7 @@ export const TentangPage = () => {
                 Tentang Sorak Keruak.
             </h1>
             <p className="mt-8 text-lg text-white/90 max-w-3xl mx-auto text-center font-sans">
-                Selamat datang di situs resmi Tim KKN-PPM UGM Unit LOT-03 Sorak Keruak. Website ini didedikasikan untuk mendokumentasikan dan mempromosikan potensi bahari, budaya, dan pariwisata di Kecamatan Keruak, Lombok Timur, sebagai bagian dari program pengabdian kepada masyarakat.
+                Selamat datang di situs resmi Tim KKN-PPM UGM Unit Sorak Keruak. Website ini didedikasikan untuk mendokumentasikan dan mempromosikan potensi bahari, budaya, dan pariwisata di Kecamatan Keruak, Lombok Timur, sebagai bagian dari program pengabdian kepada masyarakat.
             </p>
         </div>
       </div>
