@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react"; // <-- 1. Impor useEffect
+import React, { useState, useEffect } from "react";
 import Header from "../../components/Header";
 import { ImageCarousel } from "../../components/ImageCarousel";
 
-// Import-impor lainnya
+// Impor-impor lainnya
 import TanjungLuarBackground from '../../assets/images/ParwisTLBackground.png';
 import KetapangRayaBackground from '../../assets/images/ParwisKTPRBackground.svg';
 import tlGallery1 from '../../assets/images/TL1.png';
@@ -17,6 +17,7 @@ import krGallery4 from '../../assets/images/ktpr4.png';
 import krGallery5 from '../../assets/images/ktpr5.png';
 
 export const PariwisataPage = () => {
+  // Definisi data (tidak ada perubahan)
   const tanjungLuarGallery = [
     { src: tlGallery1, alt: 'Suasana pelelangan ikan di Tanjung Luar' },
     { src: tlGallery2, alt: 'Perahu nelayan Suku Bajo' },
@@ -55,19 +56,28 @@ export const PariwisataPage = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const goToPrevious = () => setCurrentIndex(prev => (prev > 0 ? prev - 1 : prev));
-  const goToNext = () => setCurrentIndex(prev => (prev < pageData.length - 1 ? prev + 1 : prev));
+
+  // === FOKUS PERUBAHAN DI SINI ===
+  const goToPrevious = () => {
+    setCurrentIndex(prev => (prev > 0 ? prev - 1 : prev));
+    window.scrollTo(0, 0); // Tambahkan ini
+  };
+  
+  const goToNext = () => {
+    setCurrentIndex(prev => (prev < pageData.length - 1 ? prev + 1 : prev));
+    window.scrollTo(0, 0); // Tambahkan ini
+  };
+  // === AKHIR DARI FOKUS PERUBAHAN ===
+  
   const currentView = pageData[currentIndex];
 
-  // <-- 2. Tambahkan hook ini
-  // Ini akan membuat halaman selalu dimulai dari atas
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <>
-      {/* Bagian Hero Section */}
+      {/* Bagian Hero Section (tidak ada perubahan) */}
       <div className="relative isolate overflow-hidden">
         <img className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ease-in-out" alt="Background" src={currentView.background} key={currentView.background}/>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent from-30% to-[#0b3848]"></div>
@@ -107,7 +117,7 @@ export const PariwisataPage = () => {
         </div>
       </div>
 
-      {/* Bagian Galeri Desa */}
+      {/* Bagian Galeri Desa (tidak ada perubahan) */}
       <section className="py-16 sm:py-24">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-3xl sm:text-4xl text-center mb-12 font-display">

@@ -3,9 +3,9 @@ import { createRoot } from "react-dom/client";
 import '../tailwind.css';
 import { LandingPage } from "./screens/LandingPage";
 import { PanganPage } from "./screens/PanganPage";
-import { TentangPage } from "./screens/TentangPage"; // Import the new page
-import { PariwisataPage } from "./screens/PariwisataPage"; // Import the new page
-import { LingkunganPage } from "./screens/LingkunganPage"; // Import the new page
+import { TentangPage } from "./screens/TentangPage";
+import { PariwisataPage } from "./screens/PariwisataPage";
+import { LingkunganPage } from "./screens/LingkunganPage";
 import Layout from "./components/Layout";
 
 const App = () => {
@@ -22,21 +22,26 @@ const App = () => {
     return () => window.removeEventListener('popstate', onPopState);
   }, []);
 
+  // --- EFEK INI DITAMBAHKAN ---
+  // Secara otomatis scroll ke atas setiap kali halaman (path) berubah.
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [path]); // Efek ini bergantung pada `path`
+
   let PageComponent;
   switch (path) {
     case '/pangan':
       PageComponent = <PanganPage />;
       break;
-    case '/tentang': // New route for the "Tentang" page
+    case '/tentang':
       PageComponent = <TentangPage />;
       break;
     case '/pariwisata': 
       PageComponent = <PariwisataPage />;
       break;
-      case '/lingkungan': 
+    case '/lingkungan': 
       PageComponent = <LingkunganPage />;
       break;
-
     default:
       PageComponent = <LandingPage />;
   }
