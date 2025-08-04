@@ -1,12 +1,12 @@
 {
-  "version": "1.0.0",
-  "source": "./index.html",
-  "type": "module",
   "name": "sorak-keruak",
-  "description": "web sorak keruak",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "bootstrap-icons": "^1.13.1",
