@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from "react"; // <-- 1. Impor useEffect
 import Header from '../../components/Header';
 
 import BackgroundImage from '../../assets/images/TentangBackground.png';
@@ -6,6 +6,9 @@ import BackgroundImage from '../../assets/images/TentangBackground.png';
 const TentangBackgroundImage = BackgroundImage;
   
 export const TentangPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); 
   return (
     <>
       {/* Gunakan min-h-screen agar fleksibel */}

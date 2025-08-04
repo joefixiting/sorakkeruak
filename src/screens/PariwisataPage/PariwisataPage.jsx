@@ -1,18 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react"; // <-- 1. Impor useEffect
 import Header from "../../components/Header";
 import { ImageCarousel } from "../../components/ImageCarousel";
 
-// Import background
+// Import-impor lainnya
 import TanjungLuarBackground from '../../assets/images/ParwisTLBackground.png';
 import KetapangRayaBackground from '../../assets/images/ParwisKTPRBackground.svg';
-
-// Impor gambar galeri
 import tlGallery1 from '../../assets/images/TL1.png';
 import tlGallery2 from '../../assets/images/TL2.png';
 import tlGallery3 from '../../assets/images/TL3.png';
 import tlGallery4 from '../../assets/images/TL4.png';
 import tlGallery5 from '../../assets/images/TL5.png';
-
 import krGallery1 from '../../assets/images/ktpr1.png';
 import krGallery2 from '../../assets/images/ktpr2.png';
 import krGallery3 from '../../assets/images/ktpr3.png';
@@ -40,7 +37,7 @@ export const PariwisataPage = () => {
     {
       title: "Tanjung Luar.",
       paragraphs: [
-        "Dermaga Tanjung Luar adalah salah satu destinasi wisata favorit di Kecamatan Keruak yang menawarkan pemandangan laut yang memukau. Dermaga ini menjadi tempat favorit wisatawan yang ingin menikmati keindahan alam, terutama saat matahari terbit. Dengan hamparan laut biru yang luas serta panorama Samudra Hindia yang memesona, Dermaga Tanjung Luar adalah tempat sempurna untuk melepas penat, mengabadikan momen indah lewat lensa kamera, atau sekadar duduk tenang menikmati semilir angin laut. Lebih dari sekadar spot wisata, Dermaga Tanjung Luar adalah ruang refleksi, tempat di mana keindahan alam dan ketenangan berpadu sempurna dalam satu pengalaman yang sulit dilupakan."
+        "Dermaga Tanjung Luar adalah salah satu destinasi wisata favorit di Kecamatan Keruak yang menawarkan pemandangan laut yang memukau. Dermaga ini menjadi tempat favorit wisatawan yang ingin menikmati keindahan alam, terutama saat matahari terbit. Dengan hamparan laut biru yang luas serta panorama Samudra Hindia yang memesona, Dermaga Tanjung Luar adalah tempat sempurna untuk melepas penat, mengabadikan momen indah lewat lensa kamera, atau sekadar duduk tenang menikmati semilir angin laut. Lebih dari sekadar spot wisata, Dermaga Tanjung Luar adalah ruang refleksi, tempat di mana keindahan alam dan ketenangan berpadu sempurna dalam satu pengalaman yang sulit dilupakan."
       ],
       background: TanjungLuarBackground,
       gallery: tanjungLuarGallery,
@@ -49,7 +46,7 @@ export const PariwisataPage = () => {
     {
       title: "Ketapang Raya.",
       paragraphs: [
-        'Di ujung timur Pulau Lombok tersembunyi sebuah surga yang jarang dijamah wisatawan: Pantai Lungkak. Berbeda dari keramaian Pantai Pink atau Pantai Tanjung Aan, pantai ini menawarkan pengalaman yang jauh lebih damai dan autentik. Lautnya yang biru, pasir yang halus, dan suasananya tenang memanjakan tiap wisatawan yang berkunjung. Di kejauhan, deretan pulau-pulau kecil tampak anggun menghiasi cakrawala, menciptakan panorama yang begitu memukau dan menenangkan jiwa. Pantai Lungkak bukan sekadar destinasi; ia adalah tempat pelarian bagi siapa pun yang ingin kembali menyatu dengan alam dan menikmati keindahan yang masih autentik.'
+        'Di ujung timur Pulau Lombok tersembunyi sebuah surga yang jarang dijamah wisatawan: Pantai Lungkak. Berbeda dari keramaian Pantai Pink atau Pantai Tanjung Aan, pantai ini menawarkan pengalaman yang jauh lebih damai dan autentik. Lautnya yang biru, pasir yang halus, dan suasananya tenang memanjakan tiap wisatawan yang berkunjung. Di kejauhan, deretan pulau-pulau kecil tampak anggun menghiasi cakrawala, menciptakan panorama yang begitu memukau dan menenangkan jiwa. Pantai Lungkak bukan sekadar destinasi; ia adalah tempat pelarian bagi siapa pun yang ingin kembali menyatu dengan alam dan menikmati keindahan yang masih autentik.'
       ],
       background: KetapangRayaBackground,
       gallery: ketapangRayaGallery,
@@ -61,6 +58,12 @@ export const PariwisataPage = () => {
   const goToPrevious = () => setCurrentIndex(prev => (prev > 0 ? prev - 1 : prev));
   const goToNext = () => setCurrentIndex(prev => (prev < pageData.length - 1 ? prev + 1 : prev));
   const currentView = pageData[currentIndex];
+
+  // <-- 2. Tambahkan hook ini
+  // Ini akan membuat halaman selalu dimulai dari atas
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -80,7 +83,6 @@ export const PariwisataPage = () => {
 
             <div className="relative mb-6">
               <div className="absolute inset-x-0 -top-4 -bottom-4 bg-[#0b3848] opacity-40 rounded-lg blur-xl"></div>
-              {/* Menggunakan font-display dan menghapus style inline */}
               <h1 className="relative text-5xl sm:text-7xl font-display">
                 {currentView.title}
               </h1>
@@ -88,7 +90,6 @@ export const PariwisataPage = () => {
 
             <div className="relative max-w-2xl">
               <div className="absolute inset-0 bg-[#0b3848] opacity-50 rounded-full blur-2xl"></div>
-              {/* Menggunakan font-sans untuk paragraf */}
               <div className="relative flex flex-col gap-4 mx-auto text-sm sm:text-base text-white/90 text-justify p-4 font-sans">
                 {currentView.paragraphs.map((p, index) => <p key={index}>{p}</p>)}
               </div>
@@ -109,8 +110,7 @@ export const PariwisataPage = () => {
       {/* Bagian Galeri Desa */}
       <section className="py-16 sm:py-24">
         <div className="mx-auto max-w-7xl">
-          {/* Judul galeri juga bisa menggunakan font yang sesuai jika diinginkan */}
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 font-display">
+          <h2 className="text-3xl sm:text-4xl text-center mb-12 font-display">
             {currentView.galleryTitle}
           </h2>
           <ImageCarousel images={currentView.gallery} />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react"; // <-- 1. Impor useEffect
 import Card from "../../components/Card";
 import CardContent from "../../components/CardContent";
 import Header from "../../components/Header";
@@ -11,7 +11,9 @@ export const LandingPage = () => {
     { id: 1, name: "Desa Tanjung Luar", image: TanjungLuarImage, description: "Desa Tanjung Luar, merupakan desa pesisir di Kecamatan Keruak. Desa dengan keanekaragaman suku menyaratkan kekayaan budaya. Budaya Suku Bajo menghiasi desa ini, tradisi nyalamaq dilauq yang telah diselenggarakan sejak zaman Hindia-Belanda. Selain itu, ciri khas bahari dengan adanya tempat pelelangan ikan di Pasar Tanjung Luar. Tanjung Luar menyimpan berbagai cerita." },
     { id: 2, name: "Desa Ketapang Raya", image: KetapangRayaImage, description: 'Sama halnya dengan Desa Tanjung Luar, berbagai cerita bermuara di Ketapang Raya. Desa ini merupakan pemekaran dari Desa Tanjung Luar. Konon, nama "Ketapang" berasal dari tanaman ketepeng yang banyak tumbuh di wilayah Ketapang Raya. Jajaran garam di Dusun Telaga Bagik dan wisata pesisir Pantai Lungkak.' },
   ];
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="relative isolate overflow-hidden">

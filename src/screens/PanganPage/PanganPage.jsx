@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react"; // <-- 1. Impor useEffect
 import Header from '../../components/Header';
 import Carousel from '../../components/Carousel';
 import Modal from '../../components/Modal';
@@ -49,6 +49,10 @@ export const PanganPage = () => {
   const handleCloseModal = () => {
     setSelectedCard(null);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
