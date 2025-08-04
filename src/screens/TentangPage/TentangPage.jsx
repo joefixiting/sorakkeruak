@@ -51,7 +51,7 @@ export const TentangPage = () => {
         </div>
 
         <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
-            <h1 className="text-5xl sm:text-7xl font-display text-[#f0843b]">
+            <h1 className="text-5xl sm:text-7xl font-display text-[#ffffff]">
                 Tentang Sorak Keruak
             </h1>
             <p className="mt-8 text-lg text-white/90 max-w-3xl mx-auto text-center font-sans">
