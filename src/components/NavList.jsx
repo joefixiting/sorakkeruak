@@ -11,9 +11,10 @@ const NavList = ({ isOpen, onToggle, links, navigate }) => {
         aria-hidden="true"
       ></div>
       <nav
-        className={`fixed top-0 right-0 h-full w-72 bg-[#0b3848]/25    backdrop-blur-md shadow-lg z-30
+        // --- LEBAR DIPERKECIL LAGI DI SINI ---
+        className={`fixed top-0 right-0 h-full w-56 sm:w-72 bg-[#0b3848]/25 backdrop-blur-md shadow-lg z-30
                    transform transition-transform duration-500 ease-in-out
-                    ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
+                   ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
         <div className="flex flex-col p-8 pt-24 space-y-4">
           {links.map((link) => (
