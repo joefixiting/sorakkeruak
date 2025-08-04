@@ -3,9 +3,9 @@ import React from 'react';
 
 const Footer = () => {
   const socialMediaLinks = [
-    { name: "Instagram", href: "#" },
-    { name: "TikTok", href: "#" },
-    { name: "Email", href: "#" },
+    { name: "Instagram", href: "https://www.instagram.com/sorak_keruak" },
+    { name: "TikTok", href: "https://www.tiktok.com/@sorak_keruak" },
+    { name: "Email", href: "mailto:kknnsorakkeruak@gmail.com" },
   ];
 
   return (
