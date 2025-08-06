@@ -1,14 +1,16 @@
-import { StrictMode, useState, useEffect } from "react";
+import { StrictMode, useState, useEffect, lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import '../tailwind.css';
-import { LandingPage } from "./screens/LandingPage";
-import { PanganPage } from "./screens/PanganPage";
-import { TentangPage } from "./screens/TentangPage";
-import { PariwisataPage } from "./screens/PariwisataPage";
-import { LingkunganPage } from "./screens/LingkunganPage";
-import { BudayaPage } from "./screens/BudayaPage";
-import { BeritaAcaraPage } from "./screens/BeritaAcaraPage";
 import Layout from "./components/Layout";
+
+// --- PERUBAHAN 1: Impor semua halaman menggunakan React.lazy ---
+const LandingPage = lazy(() => import("./screens/LandingPage").then(module => ({ default: module.LandingPage })));
+const PanganPage = lazy(() => import("./screens/PanganPage").then(module => ({ default: module.PanganPage })));
+const TentangPage = lazy(() => import("./screens/TentangPage").then(module => ({ default: module.TentangPage })));
+const PariwisataPage = lazy(() => import("./screens/PariwisataPage").then(module => ({ default: module.PariwisataPage })));
+const LingkunganPage = lazy(() => import("./screens/LingkunganPage").then(module => ({ default: module.LingkunganPage })));
+const BudayaPage = lazy(() => import("./screens/BudayaPage").then(module => ({ default: module.BudayaPage })));
+const BeritaAcaraPage = lazy(() => import("./screens/BeritaAcaraPage").then(module => ({ default: module.BeritaAcaraPage })));
 
 const App = () => {
   const [path, setPath] = useState(window.location.pathname);
@@ -24,11 +26,9 @@ const App = () => {
     return () => window.removeEventListener('popstate', onPopState);
   }, []);
 
-  // --- EFEK INI DITAMBAHKAN ---
-  // Secara otomatis scroll ke atas setiap kali halaman (path) berubah.
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [path]); // Efek ini bergantung pada `path`
+  }, [path]);
 
   let PageComponent;
   switch (path) {
@@ -47,7 +47,7 @@ const App = () => {
     case '/budaya':
       PageComponent = <BudayaPage />; 
       break;
-    case '/beritaacara':
+    case '/beritaacara': // Pastikan path ini sesuai dengan link di NavList
       PageComponent = <BeritaAcaraPage />; 
       break;
     default:
@@ -56,7 +56,10 @@ const App = () => {
 
   return (
     <Layout navigate={navigate}>
-      {PageComponent}
+      {/* --- PERUBAHAN 2: Bungkus komponen halaman dengan Suspense --- */}
+      <Suspense fallback={<div className="min-h-screen flex justify-center items-center">Loading...</div>}>
+        {PageComponent}
+      </Suspense>
     </Layout>
   );
 };

@@ -5,7 +5,7 @@ import { ContentCarousel } from '../../components/ContentCarousel';
 import BackgroundImage from '../../assets/images/IkanBackground.webp';
 
 import DodolImage from '../../assets/images/DodolRumputLaut2.webp';
-import BaruasImage from '../../assets/images/KueBaruas.png';
+import BaruasImage from '../../assets/images/KueBaruas.webp';
 import PasarImage from '../../assets/images/PasarTanjungLuar.webp';
 import AbonImage from '../../assets/images/AbonIkanTongkol.webp';
 import GaramImage from '../../assets/images/GaramKetapangRaya.webp';
