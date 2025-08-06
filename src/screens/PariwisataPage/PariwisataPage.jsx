@@ -38,7 +38,7 @@ export const PariwisataPage = () => {
     {
       title: "Tanjung Luar.",
       paragraphs: [
-        "Dermaga Tanjung Luar adalah salah satu destinasi wisata favorit di Kecamatan Keruak yang menawarkan pemandangan laut yang memukau. Dermaga ini menjadi tempat favorit wisatawan yang ingin menikmati keindahan alam, terutama saat matahari terbit. Dengan hamparan laut biru yang luas serta panorama Samudra Hindia yang memesona, Dermaga Tanjung Luar adalah tempat sempurna untuk melepas penat, mengabadikan momen indah lewat lensa kamera, atau sekadar duduk tenang menikmati semilir angin laut. Lebih dari sekadar spot wisata, Dermaga Tanjung Luar adalah ruang refleksi, tempat di mana keindahan alam dan ketenangan berpadu sempurna dalam satu pengalaman yang sulit dilupakan."
+        "Dermaga Tanjung Luar adalah salah satu destinasi wisata favorit di Kecamatan Keruak yang menawarkan pemandangan laut yang memukau. Dermaga ini menjadi tempat favorit wisatawan yang ingin menikmati keindahan alam, terutama saat matahari terbit. Dengan hamparan laut biru yang luas serta panorama Samudra Hindia yang memesona, Dermaga Tanjung Luar adalah tempat sempurna untuk melepas penat, mengabadikan momen indah lewat lensa kamera, atau sekadar duduk tenang menikmati semilir angin laut. Lebih dari sekadar spot wisata, Dermaga Tanjung Luar adalah ruang refleksi, tempat di mana keindahan alam dan ketenangan berpadu sempurna dalam satu pengalaman yang sulit dilupakan. Selain hal tersebut, di dermaga ini menjadi tempat untuk penyeberangan ke beberapa destinasi ikonik di Lombok antara lain yaitu Pantai Pink, Gili Peteluh, Gili Gambir, Gili Pasir, Semangkok, dan Gili Bembek."
       ],
       background: TanjungLuarBackground,
       gallery: tanjungLuarGallery,
