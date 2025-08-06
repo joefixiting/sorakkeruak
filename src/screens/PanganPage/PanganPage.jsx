@@ -77,14 +77,14 @@ export const PanganPage = () => {
               <div className="absolute inset-0 bg-[#0b3848] opacity-50 rounded-full blur-2xl"></div>
               <div className="relative flex flex-col gap-4 mx-auto text-sm sm:text-base text-white/90 text-justify p-4 font-sans">
                 <p>
-                  Kekayaan pangan khas Desa Ketapang Raya dan Tanjung Luar...
+                  Kekayaan pangan khas Desa Ketapang Raya dan Tanjung Luar. Sajian pangan yang lahir dari laut, potensi lokal, dan keberagaman budaya yang menjadi cerminan khas di Keruak, Lombok Timur. Cerminan dari keragaman budaya di pesisir Lombok bagian timur, yang tidak hanya menceritakan kekayaan kuliner bahari. Namun juga warisan budaya suku Mandar, Sasak, Bugis, Bajo, Buton, Madura, Jawa, dan Ende yang bermukim di wilayah ini.
                 </p>
               </div>
             </div>
           </section>
         </div>
       </div>
-      
+
       <div className="relative isolate overflow-hidden">
         {/* ... */}
       </div>
