@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-// Arrow sub-component (can be kept inside or imported if shared)
+// Arrow sub-component
 const Arrow = ({ direction, onClick, disabled }) => (
   <button
     onClick={onClick}
@@ -19,9 +19,7 @@ const Arrow = ({ direction, onClick, disabled }) => (
   </button>
 );
 
-// Note: We use 'items' and 'onItemClick' to be more generic than 'images'
 export const ContentCarousel = ({ items, onItemClick }) => {
-  // Initialize to the center item
   const [activeIndex, setActiveIndex] = useState(Math.floor(items.length / 2));
   const listRef = useRef(null);
 
@@ -42,7 +40,6 @@ export const ContentCarousel = ({ items, onItemClick }) => {
     }
   }, [activeIndex, items]);
 
-  // This component doesn't render its own modal. It tells the parent what was clicked.
   return (
     <div className="w-full relative">
       <Arrow onClick={goToPrev} direction="left" disabled={activeIndex === 0} />
@@ -53,17 +50,17 @@ export const ContentCarousel = ({ items, onItemClick }) => {
       >
         {items.map((item, index) => (
           <div
-            key={item.id || index} // Use item.id if available, otherwise fallback to index
+            key={item.id || index}
             className={`flex-shrink-0 transition-transform duration-300 ease-in-out cursor-pointer ${
               activeIndex === index ? 'transform scale-125 z-10' : 'transform scale-100 opacity-70'
             }`}
-            // Pass the entire 'item' object on click
             onClick={() => onItemClick && onItemClick(item)}
           >
             <img
-              src={item.image} // Assumes the item object has an 'image' property
-              alt={item.title} // Assumes the item object has a 'title' property
+              src={item.image}
+              alt={item.title}
               className="w-64 h-40 object-cover rounded-lg shadow-lg"
+              loading="lazy" // <-- LAZY LOADING DITERAPKAN DI SINI
             />
           </div>
         ))}
@@ -72,4 +69,4 @@ export const ContentCarousel = ({ items, onItemClick }) => {
       <Arrow onClick={goToNext} direction="right" disabled={activeIndex === items.length - 1} />
     </div>
   );
-};
+};  

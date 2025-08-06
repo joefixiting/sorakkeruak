@@ -3,18 +3,18 @@ import Header from "../../components/Header";
 import { ImageCarousel } from "../../components/ImageCarousel";
 
 // Impor-impor lainnya
-import TanjungLuarBackground from '../../assets/images/ParwisTLBackground.png';
+import TanjungLuarBackground from '../../assets/images/ParwisTLBackground.webp';
 import KetapangRayaBackground from '../../assets/images/ParwisKTPRBackground.svg';
-import tlGallery1 from '../../assets/images/TL1.png';
-import tlGallery2 from '../../assets/images/TL2.png';
-import tlGallery3 from '../../assets/images/TL3.png';
-import tlGallery4 from '../../assets/images/TL4.png';
-import tlGallery5 from '../../assets/images/TL5.png';
-import krGallery1 from '../../assets/images/ktpr1.png';
-import krGallery2 from '../../assets/images/ktpr2.png';
-import krGallery3 from '../../assets/images/ktpr3.png';
-import krGallery4 from '../../assets/images/ktpr4.png';
-import krGallery5 from '../../assets/images/ktpr5.png';
+import tlGallery1 from '../../assets/images/TL1.webp';
+import tlGallery2 from '../../assets/images/TL2.webp';
+import tlGallery3 from '../../assets/images/TL3.webp';
+import tlGallery4 from '../../assets/images/TL4.webp';
+import tlGallery5 from '../../assets/images/TL5.webp';
+import krGallery1 from '../../assets/images/ktpr1.webp';
+import krGallery2 from '../../assets/images/ktpr2.webp';
+import krGallery3 from '../../assets/images/ktpr3.webp';
+import krGallery4 from '../../assets/images/ktpr4.webp';
+import krGallery5 from '../../assets/images/ktpr5.webp';
 
 export const PariwisataPage = () => {
   // Definisi data (tidak ada perubahan)

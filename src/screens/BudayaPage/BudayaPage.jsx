@@ -3,18 +3,18 @@ import Header from '../../components/Header';
 import { ImageCarousel } from "../../components/ImageCarousel";
 
 // Asset Imports
-import BackgroundImage from '../../assets/images/BudayaBackground.png';
+import BackgroundImage from '../../assets/images/BudayaBackground.webp';
 import SorakGallery1 from '../../assets/images/Budaya1.webp';
 import SorakGallery2 from '../../assets/images/Budaya2.webp';
 import SorakGallery3 from '../../assets/images/Budaya3.webp';
-import SorakGallery4 from '../../assets/images/Budaya4.png';
-import SorakGallery5 from '../../assets/images/Budaya5.png';
-import SorakGallery6 from '../../assets/images/Budaya6.png';
-import SorakGallery7 from '../../assets/images/Budaya7.png';
+import SorakGallery4 from '../../assets/images/Budaya4.webp';
+import SorakGallery5 from '../../assets/images/Budaya5.webp';
+import SorakGallery6 from '../../assets/images/Budaya6.webp';
+import SorakGallery7 from '../../assets/images/Budaya7.webp';
 import SorakGallery8 from '../../assets/images/Budaya8.webp';
 import SorakGallery9 from '../../assets/images/Budaya9.webp';
 import SorakGallery10 from '../../assets/images/Budaya10.webp';
-import SorakGallery11 from '../../assets/images/Budaya11.png';
+import SorakGallery11 from '../../assets/images/Budaya11.webp';
 
 export const BudayaPage = () => {
   const sorakKeruakGallery = [
