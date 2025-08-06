@@ -10,11 +10,11 @@ import tlGallery2 from '../../assets/images/TL2.webp';
 import tlGallery3 from '../../assets/images/TL3.webp';
 import tlGallery4 from '../../assets/images/TL4.webp';
 import tlGallery5 from '../../assets/images/TL5.webp';
-import krGallery1 from '../../assets/images/ktpr1.webp';
-import krGallery2 from '../../assets/images/ktpr2.webp';
-import krGallery3 from '../../assets/images/ktpr3.webp';
-import krGallery4 from '../../assets/images/ktpr4.webp';
-import krGallery5 from '../../assets/images/ktpr5.webp';
+import krGallery1 from '../../assets/images/KTPR1.webp';
+import krGallery2 from '../../assets/images/KTPR2.webp';
+import krGallery3 from '../../assets/images/KTPR3.webp';
+import krGallery4 from '../../assets/images/KTPR4.webp';
+import krGallery5 from '../../assets/images/KTPR5.webp';
 
 export const PariwisataPage = () => {
   // Definisi data (tidak ada perubahan)
