@@ -5,11 +5,11 @@ import { ImageCarousel } from "../../components/ImageCarousel";
 // Gambar latar dan galeri masih pakai yang lama
 import TanjungLuarBackground from '../../assets/images/LingkunganBackground.webp';
 import KetapangRayaBackground from '../../assets/images/ParwisKTPRBackground.svg';
-import tlGallery1 from '../../assets/images/LK1.webp';
-import tlGallery2 from '../../assets/images/TL2.webp';
-import tlGallery3 from '../../assets/images/TL3.webp';
-import tlGallery4 from '../../assets/images/TL4.webp';
-import tlGallery5 from '../../assets/images/TL5.webp';
+import tlGallery1 from '../../assets/images/LK2.webp';
+import tlGallery2 from '../../assets/images/LK1.webp';
+import tlGallery3 from '../../assets/images/LK3.webp';
+import tlGallery4 from '../../assets/images/LK4.webp';
+import tlGallery5 from '../../assets/images/LK5.webp';
 import krGallery1 from '../../assets/images/ktpr1.webp';
 import krGallery2 from '../../assets/images/ktpr2.webp';
 import krGallery3 from '../../assets/images/ktpr3.webp';
