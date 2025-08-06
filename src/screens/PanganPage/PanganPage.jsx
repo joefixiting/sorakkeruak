@@ -4,41 +4,46 @@ import Modal from '../../components/Modal';
 import { ContentCarousel } from '../../components/ContentCarousel'; 
 import BackgroundImage from '../../assets/images/IkanBackground.webp';
 
+import DodolImage from '../../assets/images/DodolRumputLaut2.webp';
+// import KerupukImage from '../../assets/images/KerupukRumputLaut1.webp';
+import PasarImage from '../../assets/images/PasarTanjungLuar.webp';
+import AbonImage from '../../assets/images/AbonIkanTongkol.webp';
+import GaramImage from '../../assets/images/GaramKetapangRaya.webp';
+
 const PanganBackgroundImage = BackgroundImage;
 
 const panganData = [
-    {
-        id: 1,
-        image: 'https://placehold.co/600x400/1a5266/ffffff?text=Ikan+Asin',
-        title: 'Ikan Asin & Olahan Laut',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt, turpis in vestibulum vulputate, ligula lorem congue urna, sed facilisis nibh sapien sed justo. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce non nisi in odio tincidunt suscipit. Sed euismod, nisi vel consectetur interdum, nisl nisi aliquet nunc, nec facilisis enim erat in justo. Suspendisse potenti. Donec ac ligula a quam facilisis tincidunt. Sed at felis non leo commodo convallis. Integer in libero sed odio eleifend facilisis. Donec id ligula nec augue efficitur tincidunt. Nulla facilisi. Sed euismod, nisi vel consectetur interdum, nisl nisi aliquet nunc, nec facilisis enim erat in justo. Suspendenti. Donec ac ligula a quam facilisis tincidunt. Sed at felis non leo commodo convallis. Integer in libero sed odio eleifend facilisis. Donec id ligula nec augue efficitur tincidunt.',
-    },
-    {
-        id: 2,
-        image: 'https://placehold.co/600x400/1a5266/ffffff?text=Garam+Keruak',
-        title: 'Garam Tradisional',
-        description: 'Di Desa Ketapang Raya, petani garam secara turun-temurun memproduksi garam berkualitas tinggi dengan metode tradisional yang mengandalkan terik matahari Lombok.'
-    },
-    {
-        id: 3,
-        image: 'https://placehold.co/600x400/1a5266/ffffff?text=Rumput+Laut',
-        title: 'Budidaya Rumput Laut',
-        description: 'Perairan Keruak yang tenang dan bersih sangat ideal untuk budidaya rumput laut. Komoditas ini menjadi sumber pendapatan penting bagi banyak keluarga nelayan dan diolah menjadi berbagai produk.'
-    },
-    {
-        id: 4,
-        image: 'https://placehold.co/600x400/1a5266/ffffff?text=Terasi+Bajo',
-        title: 'Terasi Khas Bajo',
-        description: 'Dengan resep warisan, Suku Bajo di Tanjung Luar membuat terasi dengan aroma dan rasa yang kuat, menjadi bumbu wajib dalam masakan lokal. Proses fermentasinya yang unik menghasilkan produk premium.'
-    },
-    {
-        id: 5,
-        image: 'https://placehold.co/600x400/1a5266/ffffff?text=Kue+Pesisir',
-        title: 'Kue Tradisional Pesisir',
-        description: 'Berbagai kue basah dan kering dibuat menggunakan bahan-bahan lokal seperti kelapa, gula aren, dan tepung beras, mencerminkan kekayaan rasa kuliner pesisir Lombok.'
-    }
+  {
+    id: 1,
+    image: DodolImage,
+    title: 'Dodol Rumput Laut',
+    description: 'Inovasi kuliner khas pesisir Lombok, dodol rumput laut mengubah hasil budidaya laut menjadi camilan manis yang unik dan bergizi. Dibuat dari rumput laut segar dan gula. Dodol ini memiliki tekstur kenyal yang khas dengan kandungan rumput laut. Produk ini tidak hanya menjadi oleh-oleh favorit, tetapi juga bukti kreativitas masyarakat lokal dalam mengolah sumber daya bahari menjadi produk bernilai tambah.'
+  },
+  {
+    id: 2,
+    image: 'https://placehold.co/600x400/1a5266/ffffff?text=Kerupuk+Rumput+Laut',
+    title: 'Kerupuk Rumput Laut',
+    description: 'Sebagai pendamping hidangan utama atau sekadar camilan, kerupuk rumput laut menawarkan kerenyahan gurih dengan sentuhan rasa laut yang khas. Diolah dari rumput laut berkualitas serta bumbu rempah. Rumput laut membuat kerupuk ini tidak hanya lezat, tetapi juga menjadi alternatif camilan yang sehat.'
+  },
+  {
+    id: 3,
+    image: PasarImage,
+    title: 'Pasar Ikan Tanjung Luar',
+    description: 'Pasar Ikan Tanjung Luar adalah jantung dari kehidupan bahari di Lombok Timur. Dikenal sebagai salah satu pendaratan ikan terbesar, pasar ini menawarkan pemandangan eksotis di mana para nelayan, membawa hasil tangkapan segar, mulai dari ikan tongkol hingga hiu dan pari manta. Di sini, tradisi lelang ikan yang riuh dan proses pengolahan hasil laut seperti ikan asin dan terasi berlangsung setiap pagi hari, menjadikannya pusat ekonomi dan budaya maritim yang vital bagi masyarakat pesisir.'
+  },
+  {
+    id: 4,
+    image: AbonImage,
+    title: 'Abon Ikan Tongkol',
+    description: 'Abon ikan tongkol dari Keruak adalah wujud sempurna dari pengolahan hasil laut yang melimpah. Dibuat dari daging ikan tongkol segar yang direbus, disuwir halus, lalu disangrai dengan racikan bumbu rempah hingga kering dan keemasan. Hasilnya adalah abon dengan cita rasa gurih dan aroma yang menggugah selera. Selain praktis dan tahan lama, abon ikan tongkol kaya akan protein dan menjadi lauk favorit yang mencerminkan kekayaan rasa kuliner bahari Lombok.'
+  },
+  {
+    id: 5,
+    image: GaramImage,
+    title: 'Garam Ketapang Raya',
+    description: 'Di pesisir Desa Ketapang Raya, tradisi pembuatan garam diwariskan secara turun-temurun. Dengan memanfaatkan tungku panas dengan sabut kelapa untuk pembakaran, pemasakan garam dilakukan oleh petani-petani garam yang banyak ditemui di Ketapang Raya, terutama di Kedome dan Telaga Bagik. Garam Ketapang Raya bukan sekadar bumbu dapur, melainkan kristal keringat dan kearifan lokal para petaninya.'
+  }
 ];
-
 export const PanganPage = () => {
   const [selectedCard, setSelectedCard] = useState(null);
 

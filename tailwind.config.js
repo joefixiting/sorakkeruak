@@ -2,16 +2,21 @@
 module.exports = {
   content: [
     "./src/**/*.{html,js,ts,jsx,tsx}",
-    "./index.html" // Pastikan index.html juga di-scan
+    "./index.html"
   ],
   theme: {
     extend: {
-      // Menambahkan font kustom di sini
       fontFamily: {
         'sans': ['"SF Pro Display-Regular"'],
         'display': ['"Beautique Display-Bold"'],
         'sf-bold': ['"SF Pro Display-Bold"'],
       },
+    },
+  },
+  variants: {
+    extend: {
+      backdropFilter: ['responsive'],
+      backdropBlur: ['responsive'],
     },
   },
   plugins: [],
