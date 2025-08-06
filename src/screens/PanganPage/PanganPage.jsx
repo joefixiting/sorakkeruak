@@ -5,7 +5,7 @@ import { ContentCarousel } from '../../components/ContentCarousel';
 import BackgroundImage from '../../assets/images/IkanBackground.webp';
 
 import DodolImage from '../../assets/images/DodolRumputLaut2.webp';
-// import KerupukImage from '../../assets/images/KerupukRumputLaut1.webp';
+import BaruasImage from '../../assets/images/KueBaruas.png';
 import PasarImage from '../../assets/images/PasarTanjungLuar.webp';
 import AbonImage from '../../assets/images/AbonIkanTongkol.webp';
 import GaramImage from '../../assets/images/GaramKetapangRaya.webp';
@@ -21,9 +21,9 @@ const panganData = [
   },
   {
     id: 2,
-    image: 'https://placehold.co/600x400/1a5266/ffffff?text=Kerupuk+Rumput+Laut',
-    title: 'Kerupuk Rumput Laut',
-    description: 'Sebagai pendamping hidangan utama atau sekadar camilan, kerupuk rumput laut menawarkan kerenyahan gurih dengan sentuhan rasa laut yang khas. Diolah dari rumput laut berkualitas serta bumbu rempah. Rumput laut membuat kerupuk ini tidak hanya lezat, tetapi juga menjadi alternatif camilan yang sehat.'
+    image: GaramImage,
+    title: 'Garam Ketapang Raya',
+    description: 'Di pesisir Desa Ketapang Raya, tradisi pembuatan garam diwariskan secara turun-temurun. Dengan memanfaatkan tungku panas dengan sabut kelapa untuk pembakaran, pemasakan garam dilakukan oleh petani-petani garam yang banyak ditemui di Ketapang Raya, terutama di Kedome dan Telaga Bagik. Garam Ketapang Raya bukan sekadar bumbu dapur, melainkan kristal keringat dan kearifan lokal para petaninya.'
   },
   {
     id: 3,
@@ -39,9 +39,9 @@ const panganData = [
   },
   {
     id: 5,
-    image: GaramImage,
-    title: 'Garam Ketapang Raya',
-    description: 'Di pesisir Desa Ketapang Raya, tradisi pembuatan garam diwariskan secara turun-temurun. Dengan memanfaatkan tungku panas dengan sabut kelapa untuk pembakaran, pemasakan garam dilakukan oleh petani-petani garam yang banyak ditemui di Ketapang Raya, terutama di Kedome dan Telaga Bagik. Garam Ketapang Raya bukan sekadar bumbu dapur, melainkan kristal keringat dan kearifan lokal para petaninya.'
+    image: BaruasImage,
+    title: 'Kue Baruas',
+    description: 'Kue Baruas adalah kue kering klasik warisan dari suku Bugis-Makassar, Sulawesi Selatan. Dibuat dari bahan utama tepung beras yang disangrai, dicampur dengan kelapa parut dan gula, kue ini menawarkan aroma wangi yang khas. Cita rasanya manis-gurih dengan tekstur renyah yang lumer di mulut. Kue ini secara tersirat merefleksikan keberagaman budaya di Keruak, pesisir lombok Timur, di mana suku Bugis-Makassar berkontribusi dalam memperkaya tradisi kuliner lokal.'
   }
 ];
 export const PanganPage = () => {
