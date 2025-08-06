@@ -10,11 +10,7 @@ import tlGallery2 from '../../assets/images/LK1.webp';
 import tlGallery3 from '../../assets/images/LK3.webp';
 import tlGallery4 from '../../assets/images/LK4.webp';
 import tlGallery5 from '../../assets/images/LK5.webp';
-import krGallery1 from '<div styleName={} />
-<div styleName={} />
-<assets />
-<images />
-<LK7></LK7>.webp';
+import krGallery1 from '../../assets/images/LK7.webp';
 import krGallery2 from '../../assets/images/LK8.webp';
 import krGallery3 from '../../assets/images/LK6.webp';
 import krGallery4 from '../../assets/images/LK9.webp';
