@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Header from '../../components/Header';
 import Carousel from '../../components/Carousel';
 import Modal from '../../components/Modal';
-import BackgroundImage from '../../assets/images/LingkunganBackground.png';
-import LK1 from '../../assets/images/LK1.png';
+import BackgroundImage from '../../assets/images/LingkunganBackground.webp';
+import LK1 from '../../assets/images/LK1.webp';
 
 const LingkunganBackgroundImage = BackgroundImage;
 

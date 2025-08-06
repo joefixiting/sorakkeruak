@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Card from "../../components/Card";
 import CardContent from "../../components/CardContent";
 import Header from "../../components/Header";
-import BackgroundImage from '../../assets/images/LandingPageBackground.png';
+import BackgroundImage from '../../assets/images/LandingPageBackground.webp';
 import TanjungLuarImage from '../../assets/images/TL.png';
 import KetapangRayaImage from '../../assets/images/KTPR.png';
 
@@ -60,7 +60,7 @@ export const LandingPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {villageData.map((village) => (
               <Card key={village.id} className="flex flex-col">
-                <img src={village.image} alt={village.name} className="w-full h-48 object-contain rounded-t-lg" />
+                <img src={village.image} alt={village.name} className="w-full h-48 object-contain rounded-t-lg" loading="lazy" />
                 <CardContent className="flex-grow flex flex-col font-sans">
                   <h3 className="text-xl font-sf-bold mb-2">{village.name}</h3>
                   <p className="text-white/80 text-sm flex-grow text-justify">{village.description}</p>

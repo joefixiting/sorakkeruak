@@ -3,18 +3,18 @@ import Header from '../../components/Header';
 import { ImageCarousel } from "../../components/ImageCarousel";
 
 // Impor-impor lainnya
-import BackgroundImage from '../../assets/images/TentangBackground.png';
-import SorakGallery1 from '../../assets/images/Tentang1.JPG';
-import SorakGallery2 from '../../assets/images/Tentang2.JPG';
-import SorakGallery3 from '../../assets/images/Tentang3.JPG';
-import SorakGallery4 from '../../assets/images/Tentang4.JPG';
-import SorakGallery5 from '../../assets/images/Tentang5.JPG';
-import SorakGallery6 from '../../assets/images/Tentang6.JPG';
-import SorakGallery7 from '../../assets/images/Tentang7.JPG';
-import SorakGallery8 from '../../assets/images/Tentang8.JPG';
-import SorakGallery9 from '../../assets/images/Tentang9.JPG';
-import SorakGallery10 from '../../assets/images/Tentang10.JPG';
-import SorakGallery11 from '../../assets/images/Tentang11.JPG';
+import BackgroundImage from '../../assets/images/TentangBackground.webp';
+import SorakGallery1 from '../../assets/images/Tentang1.webp';
+import SorakGallery2 from '../../assets/images/Tentang2.webp';
+import SorakGallery3 from '../../assets/images/Tentang3.webp';
+import SorakGallery4 from '../../assets/images/Tentang4.webp';
+import SorakGallery5 from '../../assets/images/Tentang5.webp';
+import SorakGallery6 from '../../assets/images/Tentang6.webp';
+import SorakGallery7 from '../../assets/images/Tentang7.webp';
+import SorakGallery8 from '../../assets/images/Tentang8.webp';
+import SorakGallery9 from '../../assets/images/Tentang9.webp';
+import SorakGallery10 from '../../assets/images/Tentang10.webp';
+import SorakGallery11 from '../../assets/images/Tentang11.webp';
 
 export const TentangPage = () => {
   // Data galeri (tidak ada perubahan)

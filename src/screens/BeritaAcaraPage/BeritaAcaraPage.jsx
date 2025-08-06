@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Header from "../../components/Header";
-import BackgroundImage from '../../assets/images/OnProgress.JPG';
+import BackgroundImage from '../../assets/images/OnProgress.webp';
 
 export const BeritaAcaraPage = () => {
   useEffect(() => {

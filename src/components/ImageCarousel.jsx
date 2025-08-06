@@ -89,6 +89,7 @@ export const ImageCarousel = ({ images }) => {
                 src={image.src}
                 alt={image.alt}
                 className="w-64 h-40 object-cover rounded-lg shadow-lg"
+                loading="lazy"
               />
             </div>
           ))}
