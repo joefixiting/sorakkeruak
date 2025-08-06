@@ -34,26 +34,29 @@ export const PariwisataPage = () => {
     { src: krGallery5, alt: 'Pesisir pantai Lungkak' },
   ];
 
-  const pageData = [
-    {
+const pageData = [
+{
       title: "Tanjung Luar.",
+
       paragraphs: [
-        "Dermaga Tanjung Luar adalah salah satu destinasi wisata favorit di Kecamatan Keruak yang menawarkan pemandangan laut yang memukau. Dermaga ini menjadi tempat favorit wisatawan yang ingin menikmati keindahan alam, terutama saat matahari terbit. Dengan hamparan laut biru yang luas serta panorama Samudra Hindia yang memesona, Dermaga Tanjung Luar adalah tempat sempurna untuk melepas penat, mengabadikan momen indah lewat lensa kamera, atau sekadar duduk tenang menikmati semilir angin laut. Lebih dari sekadar spot wisata, Dermaga Tanjung Luar adalah ruang refleksi, tempat di mana keindahan alam dan ketenangan berpadu sempurna dalam satu pengalaman yang sulit dilupakan. Selain hal tersebut, di dermaga ini menjadi tempat untuk penyeberangan ke beberapa destinasi ikonik di Lombok antara lain yaitu Pantai Pink, Gili Peteluh, Gili Gambir, Gili Pasir, Semangkok, dan Gili Bembek."
-      ],
+        "Dermaga Tanjung Luar adalah salah satu destinasi wisata favorit di Kecamatan Keruak yang menawarkan pemandangan laut yang memukau. Dermaga ini menjadi tempat favorit wisatawan yang ingin menikmati keindahan alam, terutama saat matahari terbit. Dengan hamparan laut biru yang luas serta panorama Samudra Hindia yang memesona, Dermaga Tanjung Luar adalah tempat sempurna untuk melepas penat, mengabadikan momen indah lewat lensa kamera, atau sekadar duduk tenang menikmati semilir angin laut.",
+        "Lebih dari sekadar spot wisata, dermaga ini juga menjadi pusat aktivitas penyeberangan ke beberapa destinasi ikonik di Lombok seperti Pantai Pink, Gili Peteluh, Gili Gambir, Gili Pasir, Semangkok, dan Gili Bembek. Ini menjadikan Tanjung Luar sebagai ruang refleksi di mana keindahan alam dan denyut kehidupan lokal berpadu sempurna."
+    ],
       background: TanjungLuarBackground,
       gallery: tanjungLuarGallery,
       galleryTitle: "Dermaga Tanjung Luar",
     },
     {
-      title: "Ketapang Raya.",
+    title: "Ketapang Raya.",
       paragraphs: [
-        'Di ujung timur Pulau Lombok tersembunyi sebuah surga yang jarang dijamah wisatawan: Pantai Lungkak. Berbeda dari keramaian Pantai Pink atau Pantai Tanjung Aan, pantai ini menawarkan pengalaman yang jauh lebih damai dan autentik. Lautnya yang biru, pasir yang halus, dan suasananya tenang memanjakan tiap wisatawan yang berkunjung. Di kejauhan, deretan pulau-pulau kecil tampak anggun menghiasi cakrawala, menciptakan panorama yang begitu memukau dan menenangkan jiwa. Pantai Lungkak bukan sekadar destinasi; ia adalah tempat pelarian bagi siapa pun yang ingin kembali menyatu dengan alam dan menikmati keindahan yang masih autentik.'
-      ],
-      background: KetapangRayaBackground,
-      gallery: ketapangRayaGallery,
-      galleryTitle: "Pantai Lungkak",
-    }
-  ];
+        'Di ujung timur Pulau Lombok tersembunyi sebuah surga yang jarang dijamah wisatawan Pantai Lungkak. Berbeda dari keramaian Pantai Pink atau Pantai Tanjung Aan, pantai ini menawarkan pengalaman yang jauh lebih damai dan autentik. Lautnya yang biru, pasir yang halus, dan suasananya yang tenang memanjakan tiap wisatawan yang berkunjung.',
+        'Di kejauhan, deretan pulau-pulau kecil tampak anggun menghiasi cakrawala, menciptakan panorama yang begitu memukau dan menenangkan jiwa. Pantai Lungkak bukan sekadar destinasi; ia adalah tempat pelarian bagi siapa pun yang ingin kembali menyatu dengan alam dan menikmati keindahan yang masih murni dan autentik.'
+    ],
+    background: KetapangRayaBackground,
+    gallery: ketapangRayaGallery,
+    galleryTitle: "Pantai Lungkak",
+  }
+];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
