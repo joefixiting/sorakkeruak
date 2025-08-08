@@ -53,7 +53,7 @@ export const BudayaPage = () => {
             <div className="relative mb-6">
               <div className="absolute inset-x-0 -top-4 -bottom-4 bg-[#0b3848] opacity-40 rounded-lg blur-xl"></div>
               <h1 className="relative text-5xl sm:text-7xl font-display">
-                Nyalamak Dilauq.
+                Nyalamak Dilauk.
               </h1>
             </div>
             
@@ -61,8 +61,8 @@ export const BudayaPage = () => {
             <div className="relative mt-6 max-w-2xl">
               <div className="absolute inset-0 bg-[#0b3848] opacity-50 rounded-full blur-2xl"></div>
               <div className="relative flex flex-col gap-4 mx-auto text-sm sm:text-base text-white/90 text-justify p-4 font-sans">
-                <p>Nyalamak Dilauq adalah sebuah upacara adat warisan Suku Bajo di Desa Tanjung Luar. Tradisi ini merupakan bentuk rasa syukur kepada Tuhan atas hasil laut yang melimpah sekaligus menjadi doa untuk memohon keselamatan bagi para nelayan saat melaut. Diselenggarakan secara turun-temurun, ritual ini telah menjadi bagian tak terpisahkan dari identitas budaya masyarakat pesisir Keruak.</p>
-                <p>Prosesi ini melibatkan pelarungan kepala kerbau ke tengah laut yang diiringi oleh perahu-perahu hias. Nyalamak Dilauq bukan sekadar ritual, melainkan juga pesta rakyat yang meriah, mempererat ikatan sosial, dan menjadi daya tarik budaya yang unik, merefleksikan kearifan lokal dalam menjaga harmoni antara manusia dan alam.</p>
+                <p>Nyalamak Dilauk adalah sebuah upacara adat warisan Suku Bajo di Desa Tanjung Luar. Tradisi ini merupakan bentuk rasa syukur kepada Tuhan atas hasil laut yang melimpah sekaligus menjadi doa untuk memohon keselamatan bagi para nelayan saat melaut. Diselenggarakan secara turun-temurun, ritual ini telah menjadi bagian tak terpisahkan dari identitas budaya masyarakat pesisir Keruak.</p>
+                <p>Prosesi ini melibatkan pelarungan kepala kerbau ke tengah laut yang diiringi oleh perahu-perahu hias. Nyalamak Dilauk bukan sekadar ritual, melainkan juga pesta rakyat yang meriah, mempererat ikatan sosial, dan menjadi daya tarik budaya yang unik, merefleksikan kearifan lokal dalam menjaga harmoni antara manusia dan alam.</p>
               </div>
             </div>
           </section>
